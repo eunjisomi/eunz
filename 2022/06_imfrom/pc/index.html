@@ -1,0 +1,70 @@
+<!-- 스와이프 슬라이더 -->
+<link rel="stylesheet" href="https://image.wconcept.co.kr/images/img/publish/css/swipeslider.css">
+
+<style>
+  /* 공통 레이아웃 */
+  html { scroll-behavior: smooth; }
+  body { margin: 0; }
+  table, table tbody tr, table tbody td, tr, td {
+    border-spacing: 0; border-style: none; padding: 0;
+  }
+
+  /* PC 컨테이너 폭 제한 & 가운데 정렬 */
+  .con_img_wrap { max-width: 1920px; margin: 0 auto; }
+
+  /* 이미지 전역 반응형 (usemap 없어도 안전) */
+  img { display: block; width: 100%; height: auto; }
+
+  /* 스와이퍼 기본 폭 정렬 */
+  .slidearea { position: relative; padding: 0; box-sizing: border-box; }
+  .swiper-container, .swiper-wrapper, .swiper-slide { width: 100%; }
+</style>
+
+<!-- 스와이프 슬라이더 영역 -->
+<div class="con_img_wrap">
+  <div class="slidearea">
+    <div class="swipeslide__slide swiper-container swipefade">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/20221107_imfrom/pc_01-1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/20221107_imfrom/pc_01-2.jpg" alt=""></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="con_img_wrap">
+  <img src="https://image.wconcept.co.kr/images/img/event/20221107_imfrom/pc_02.jpg" alt="">
+</div>
+<div class="con_img_wrap">
+  <img src="https://image.wconcept.co.kr/images/img/event/20221107_imfrom/pc_03.jpg" alt="">
+</div>
+
+<div class="con_img_wrap">
+  <div class="slidearea">
+    <div class="swipeslide__slide swiper-container swipefade">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/20221107_imfrom/pc_04-1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/20221107_imfrom/pc_04-2.jpg" alt=""></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="con_img_wrap">
+  <img src="https://image.wconcept.co.kr/images/img/event/20221107_imfrom/pc_05.jpg" alt="">
+</div>
+<div class="con_img_wrap">
+  <img src="https://image.wconcept.co.kr/images/img/event/20221107_imfrom/pc_06.jpg" alt="">
+</div>
+
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.swiper.js"></script>
+<script>
+  // 버튼/네비 없이 자동재생만
+  new Swiper('.swiper-container.swipefade', {
+    slidesPerView: 1,
+    effect: 'fade',
+    loop: true,
+    speed: 1000,
+    autoplay: { delay: 1500 }
+  });
+</script>

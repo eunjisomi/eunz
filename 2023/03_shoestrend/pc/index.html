@@ -1,0 +1,142 @@
+<!-- 스와이프 슬라이더 -->
+<link rel="stylesheet" href="https://image.wconcept.co.kr/images/img/publish/css/swipeslider.css">
+
+<style type="text/css">	
+.slidearea{position:relative;padding:0px;box-sizing:border-box}
+</style>
+	
+<style>	
+html {scroll-behavior: smooth;}
+	
+		
+table {
+border-spacing: 0px;
+border-style: none;
+padding: 0px;
+}
+table tbody tr {
+border-spacing: 0px;
+border-style: none;
+padding: 0px;
+}
+table tbody td {
+border-spacing: 0px;
+border-style: none;
+padding: 0px;
+}
+tr {
+border-spacing: 0px;
+border-style: none;
+padding: 0px;
+}
+td {
+border-spacing: 0px;
+border-style: none;
+padding: 0px;
+}
+		
+		
+body{margin: 0;}
+		
+		
+/* 이미지맵 스타일시트 */
+img[usemap] {
+border: none;
+height: auto;
+max-width: 100%;
+width: auto;}
+/* 이미지맵 스타일시트 */	
+	
+</style>
+
+
+
+
+
+
+
+<div class="con_img_wrap"><img src="https://image.wconcept.co.kr/images/img/event/2023/0814_loaffer/pc_01.jpg"></div>
+<div class="con_img_wrap"><img src="https://image.wconcept.co.kr/images/img/event/2023/0814_loaffer/pc_02.jpg" usemap="#Map">
+  <map name="Map">
+    <area shape="rect" coords="120,859,270,957" href="/product/302261667" target="_blank">
+    <area shape="rect" coords="206,1059,344,1241" href="/product/301876958" target="_blank">
+    <area shape="rect" coords="620,1135,892,1237" href="/product/302165725" target="_blank">
+    <area shape="rect" coords="844,759,1048,915" href="/product/301459348" target="_blank">
+    <area shape="rect" coords="1084,829,1336,901" href="/product/302287786" target="_blank">
+    <area shape="rect" coords="1556,835,1780,903" href="/product/303244011" target="_blank">
+    <area shape="rect" coords="1100,1269,1254,1345" href="/product/301854822" target="_blank">
+    <area shape="rect" coords="1444,1267,1690,1331" href="/product/301861366" target="_blank">
+  </map>
+</div>
+
+
+<div class="con_img_wrap"><img src="https://image.wconcept.co.kr/images/img/event/2023/0814_loaffer/pc_03.jpg" usemap="#Map2">
+  <map name="Map2">
+    <area shape="rect" coords="72,825,288,909" href="/product/300372516" target="_blank">
+    <area shape="rect" coords="574,827,828,907" href="/product/303288543" target="_blank">
+    <area shape="rect" coords="110,1237,260,1349" href="/product/301563648" target="_blank">
+    <area shape="rect" coords="468,1243,692,1337" href="/product/302294123" target="_blank">
+    <area shape="rect" coords="960,955,1116,1159" href="/product/302330079" target="_blank">
+    <area shape="rect" coords="1006,727,1182,805" href="/product/302481560" target="_blank">
+    <area shape="rect" coords="1378,1307,1542,1407" href="/product/302316193" target="_blank">
+    <area shape="rect" coords="1580,1079,1810,1159" href="/product/301861366" target="_blank">
+    <area shape="rect" coords="1608,413,1750,561" href="/product/302226981" target="_blank">
+  </map>
+</div>
+
+
+<div class="con_img_wrap"><img src="https://image.wconcept.co.kr/images/img/event/2023/0814_loaffer/pc_04.jpg" usemap="#Map3">
+  <map name="Map3">
+    <area shape="rect" coords="610,724,796,812" href="/product/302639418" target="_blank">
+    <area shape="rect" coords="130,1122,438,1224" href="/product/302235795" target="_blank">
+    <area shape="rect" coords="612,1202,808,1282" href="/product/302935502" target="_blank">
+    <area shape="rect" coords="1096,1256,1296,1360" href="/product/301876624" target="_blank">
+    <area shape="rect" coords="1466,1256,1652,1336" href="/product/302483336" target="_blank">
+    <area shape="rect" coords="1554,802,1752,908" href="/product/301414086" target="_blank">
+    <area shape="rect" coords="1060,816,1218,904" href="/product/302482836" target="_blank">
+  </map>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.swiper.js"></script>
+
+<script>
+//swiper slider
+var default_slide6 = new Swiper('.swiper-container.swipefade', {
+
+	slidesPerView: 1,
+	effect: 'fade',
+
+      navigation: {
+        nextEl: '.sw6_next',
+        prevEl: '.sw6_prev',
+      },
+
+	loop: true,
+	speed: 1000, //다음이미지로 변경되는 속도 . 1000 = 1초
+
+	autoplay: {
+		delay: 1500 //다음이미지로 넘어가기 전 대기시간. 1000 = 1초
+	},
+});
+</script>
+
+
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.rwdImageMaps.js"></script>
+<script type="text/javascript">
+/* 도큐멘트 시작 시 */
+ $(document).ready(function(e) {  
+  /* 반응형 이미지맵 */
+  $('img[usemap]').rwdImageMaps();
+ });
+</script>

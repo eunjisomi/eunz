@@ -1,0 +1,164 @@
+<!-- 스와이프 슬라이더 -->
+<link rel="stylesheet" href="https://image.wconcept.co.kr/images/img/publish/css/swipeslider.css">
+
+<style type="text/css">	
+.slidearea{position:relative;padding:0px;box-sizing:border-box}
+</style>
+	
+<style>	
+html {scroll-behavior: smooth;}
+	
+		
+table {
+border-spacing: 0px;
+border-style: none;
+padding: 0px;
+}
+table tbody tr {
+border-spacing: 0px;
+border-style: none;
+padding: 0px;
+}
+table tbody td {
+border-spacing: 0px;
+border-style: none;
+padding: 0px;
+}
+tr {
+border-spacing: 0px;
+border-style: none;
+padding: 0px;
+}
+td {
+border-spacing: 0px;
+border-style: none;
+padding: 0px;
+}
+		
+		
+body{margin: 0;}
+		
+		
+/* 이미지맵 스타일시트 */
+img[usemap] {
+border: none;
+height: auto;
+max-width: 100%;
+width: auto;}
+/* 이미지맵 스타일시트 */	
+	
+</style>
+
+
+
+<!-- 스와이프 슬라이더 영역 -->
+<div class="con_img_wrap">
+	<div class="slidearea">
+		<div class="swipeslide__slide swiper-container swipefade">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2022/1219_shimoment/pc/pc_01-1.jpg" usemap=""></div>
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2022/1219_shimoment/pc/pc_01-2.jpg" usemap=""></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="con_img_wrap"><img src="https://image.wconcept.co.kr/images/img/event/2022/1219_shimoment/pc/pc_02.jpg" usemap="#Map">
+  <map name="Map">
+    <area shape="rect" coords="133,7,666,62" href="#01">
+    <area shape="rect" coords="700,4,1196,62" href="#02">
+    <area shape="rect" coords="1246,6,1760,63" href="#03">
+  </map>
+</div>
+
+
+<div class="con_img_wrap">
+	<div class="slidearea">
+		<div class="swipeslide__slide swiper-container swipefade">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2022/1219_shimoment/pc/pc_03-1.jpg" usemap=""></div>
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2022/1219_shimoment/pc/pc_03-2.jpg" usemap=""></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="con_img_wrap">
+	<div class="slidearea">
+		<div class="swipeslide__slide swiper-container swipefade" id="01">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2022/1219_shimoment/pc/pc_04-1.jpg" usemap="#Map2">
+                  <map name="Map2">
+                    <area shape="rect" coords="1381,963,1668,1096" href="/Product/302205453" target="_blank">
+                    <area shape="rect" coords="225,1946,569,2108" href="/Product/302197025" target="_blank">
+                  </map>
+				</div>
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2022/1219_shimoment/pc/pc_04-2.jpg" usemap="#Map2"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="con_img_wrap">
+	<div class="slidearea">
+		<div class="swipeslide__slide swiper-container swipefade" id="02">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2022/1219_shimoment/pc/pc_05-1.jpg" usemap="#Map3">
+                  <map name="Map3">
+                    <area shape="rect" coords="977,872,1354,958" href="/Product/302197162" target="_blank">
+                    <area shape="rect" coords="471,1511,871,1600" href="/Product/301846440" target="_blank">
+                    <area shape="rect" coords="960,2137,1343,2231" href="/Product/301853075" target="_blank">
+                  </map>
+				</div>
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2022/1219_shimoment/pc/pc_05-2.jpg" usemap="#Map3"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="con_img_wrap"><img src="https://image.wconcept.co.kr/images/img/event/2022/1219_shimoment/pc/pc_06.jpg"  id="03"></div>
+
+<div class="con_img_wrap"><img src="https://image.wconcept.co.kr/images/img/event/2022/1219_shimoment/pc/pc_07.jpg"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.swiper.js"></script>
+
+<script>
+//swiper slider
+var default_slide6 = new Swiper('.swiper-container.swipefade', {
+
+	slidesPerView: 1,
+	effect: 'fade',
+
+      navigation: {
+        nextEl: '.sw6_next',
+        prevEl: '.sw6_prev',
+      },
+
+	loop: true,
+	speed: 1000, //다음이미지로 변경되는 속도 . 1000 = 1초
+
+	autoplay: {
+		delay: 1500 //다음이미지로 넘어가기 전 대기시간. 1000 = 1초
+	},
+});
+</script>
+
+
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.rwdImageMaps.js"></script>
+<script type="text/javascript">
+/* 도큐멘트 시작 시 */
+ $(document).ready(function(e) {  
+  /* 반응형 이미지맵 */
+  $('img[usemap]').rwdImageMaps();
+ });
+</script>

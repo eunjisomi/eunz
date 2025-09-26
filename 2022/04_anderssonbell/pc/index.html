@@ -1,0 +1,61 @@
+<!-- 스와이프 슬라이더 -->
+<link rel="stylesheet" href="https://image.wconcept.co.kr/images/img/publish/css/swipeslider.css">
+
+<style type="text/css">	
+.slidearea{position:relative;padding:0px;box-sizing:border-box}
+</style>
+	
+<style>	
+html {scroll-behavior: smooth;}
+table, tr, td {border-spacing:0;border-style:none;padding:0}
+body{margin:0}
+/* 이미지맵 스타일시트 */
+img[usemap] {
+  border:none;
+  height:auto;
+  max-width:100%;
+  width:auto;
+}
+</style>
+
+<div class="con_img_wrap">
+  <img src="https://image.wconcept.co.kr/images/img/event/20220518_anderssonbell/pc_01.jpg">
+</div>
+
+<!-- 스와이프 슬라이더 영역 -->
+<div class="con_img_wrap">
+  <div class="slidearea">
+    <div class="swipeslide__slide swiper-container swipefade">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://image.wconcept.co.kr/images/img/event/20220518_anderssonbell/pc_02-1.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://image.wconcept.co.kr/images/img/event/20220518_anderssonbell/pc_02-2.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.swiper.js"></script>
+<script>
+var default_slide6 = new Swiper('.swiper-container.swipefade', {
+  slidesPerView: 1,
+  effect: 'fade',
+  navigation: { nextEl: '.sw6_next', prevEl: '.sw6_prev' },
+  loop: true,
+  speed: 1000,
+  autoplay: { delay: 1500 }
+});
+</script>
+
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.rwdImageMaps.js"></script>
+<script>
+$(document).ready(function(){  
+  $('img[usemap]').rwdImageMaps();
+});
+</script>

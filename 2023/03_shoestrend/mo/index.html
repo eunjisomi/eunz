@@ -1,0 +1,156 @@
+<!-- 스와이프 슬라이더 -->
+<link rel="stylesheet" href="https://image.wconcept.co.kr/images/img/publish/css/swipeslider.css">
+
+<style type="text/css">	
+.slidearea{position:relative;padding:0px;box-sizing:border-box}
+</style>
+
+<style>	
+html {scroll-behavior: smooth; }
+	
+table {
+border-spacing: 0px;
+border-style: none;
+padding: 0px;
+}
+table tbody tr {
+border-spacing: 0px;
+border-style: none;
+padding: 0px;
+}
+table tbody td {
+border-spacing: 0px;
+border-style: none;
+padding: 0px;
+}
+tr {
+border-spacing: 0px;
+border-style: none;
+padding: 0px;
+}
+td {
+border-spacing: 0px;
+border-style: none;
+padding: 0px;
+}
+		
+		
+body{margin: 0;}
+img{width: 100%; max-width: 100%;}
+	
+	
+	
+        
+/* 이미지맵 스타일시트 */
+img[usemap] {
+border: none;
+height: auto;
+max-width: 100%;
+width: auto;}
+/* 이미지맵 스타일시트 */
+	
+</style>
+
+
+
+
+
+
+
+<div class="con_img_wrap"><img src="https://image.wconcept.co.kr/images/img/event/2023/0814_loaffer/mo_01.jpg" ></div>
+
+<div class="con_img_wrap"><img src="https://image.wconcept.co.kr/images/img/event/2023/0814_loaffer/mo_02.jpg" usemap="#Map" >
+  <map name="Map">
+    <area shape="rect" coords="44,622,396,730" href="/product/302287786">
+    <area shape="rect" coords="492,630,750,716" href="/product/303244011">
+    <area shape="rect" coords="38,1152,226,1258" href="/product/301854822">
+    <area shape="rect" coords="402,1142,702,1270" href="/product/302287786">
+    <area shape="rect" coords="488,1620,792,1838" href="/product/301459348">
+    <area shape="rect" coords="172,1946,404,2062" href="/product/302261667">
+    <area shape="rect" coords="166,2232,392,2428" href="/product/301876958">
+    <area shape="rect" coords="144,2740,588,2868" href="/product/302165725">
+  </map>
+</div>
+
+
+<div class="con_img_wrap"><img src="https://image.wconcept.co.kr/images/img/event/2023/0814_loaffer/mo_03.jpg" usemap="#Map2" >
+  <map name="Map2">
+    <area shape="rect" coords="48,612,278,728" href="/product/300372516">
+    <area shape="rect" coords="496,632,714,730" href="/product/303288543">
+    <area shape="rect" coords="46,1156,256,1262" href="/product/301563648">
+    <area shape="rect" coords="406,1166,684,1250" href="/product/302294123">
+    <area shape="rect" coords="284,1842,520,1944" href="/product/302481560">
+    <area shape="rect" coords="60,2090,332,2310" href="/product/302330079">
+    <area shape="rect" coords="450,2410,640,2512" href="/product/302316193">
+    <area shape="rect" coords="128,2558,418,2648" href="/product/301861366">
+    <area shape="rect" coords="460,2540,720,2688" href="/product/302226981">
+  </map>
+</div>
+
+
+<div class="con_img_wrap"><img src="https://image.wconcept.co.kr/images/img/event/2023/0814_loaffer/mo_04.jpg" usemap="#Map3" >
+  <map name="Map3">
+    <area shape="rect" coords="28,619,228,715" href="/product/302482836">
+    <area shape="rect" coords="478,613,738,715" href="/product/301414086">
+    <area shape="rect" coords="34,1115,310,1239" href="/product/301876624">
+    <area shape="rect" coords="392,1111,680,1227" href="/product/302483336">
+    <area shape="rect" coords="294,1953,514,2043" href="/product/302935502">
+    <area shape="rect" coords="108,2323,346,2427" href="/product/302639418">
+    <area shape="rect" coords="108,2769,550,2877" href="/product/302235795">
+  </map>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+$(document).on("touchend", function () {
+    $("body").blur();
+});
+</script>
+
+
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.swiper.js"></script>
+
+<script>
+//swiper slider
+var default_slide6 = new Swiper('.swiper-container.swipefade', {
+
+	slidesPerView: 1,
+	effect: 'fade',
+	mousewheelControl: false,
+	draggable:false,
+	slideToClickedSlide:false,
+	simulateTouch:false,
+	allowTouchMove:false,
+      navigation: {
+        nextEl: '.sw6_next',
+        prevEl: '.sw6_prev',
+      },
+
+	loop: true,
+	speed: 1000, //다음이미지로 변경되는 속도 . 1000 = 1초
+
+	autoplay: {
+		delay: 1500 //다음이미지로 넘어가기 전 대기시간. 1000 = 1초
+	},
+});
+</script>
+
+
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.rwdImageMaps.js"></script>
+<script type="text/javascript">
+/* 도큐멘트 시작 시 */
+ $(document).ready(function(e) {  
+  /* 반응형 이미지맵 */
+  $('img[usemap]').rwdImageMaps();
+ });
+</script>

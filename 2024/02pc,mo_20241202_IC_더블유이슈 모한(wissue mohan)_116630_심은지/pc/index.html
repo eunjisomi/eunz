@@ -1,0 +1,1073 @@
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://image.wconcept.co.kr/images/img/publish/css/wconcept_ani.css">
+<link rel="stylesheet" href="https://image.wconcept.co.kr/images/img/publish/css/swipeslider.css">
+<link rel="stylesheet" href="https://image.wconcept.co.kr/images/img/publish/css/stickynav/pc_default.css">
+
+<style>
+html, body, ul, li, ol, dl, dd, dt, p, div{margin:0;padding:0;}
+ul, li{list-style:none}
+area{
+	outline:none;
+	-webkit-outline:none;
+}
+	
+.section_wc{
+	width: 100%;
+	position: relative;
+	margin:0 auto; 
+	overflow: hidden;
+}
+.main_cover{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:1
+}
+.sub_cover{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	z-index:2;
+	top:0;
+	vertical-align: top;
+}
+.sec_cover{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	z-index:2;
+	opacity:0;
+}
+.sec_link{display:block; vertical-align:top;}
+.sec_link img{vertical-align:top;}
+.swipecarou .swiper-wrapper,
+.swipecarou2 .swiper-wrapper {
+  transition-timing-function: linear; height:auto;
+}
+/* 팝업 */
+#lightbox_wrap{
+	position: absolute;
+	left: 50%;
+	z-index: 1001;
+	display: none;
+	text-align:center;
+	max-width: 840px;
+	width: 50%;
+}
+
+.lightbox{
+	position:relative;
+	display:inline-block;
+	max-width: 840px;
+	width: 100%;
+}
+.closewrap{
+	position: absolute;
+	left: 0%;
+	right: 0;
+	top: 0;
+	max-width: 840px;
+	box-sizing: border-box;
+	height: 22%;
+	margin: 0 auto;
+	z-index:1002;
+	text-align:right;
+}
+
+.agree_wc{
+	position:absolute;
+	top: 83%;
+	left: 30%;
+	width: 40%;
+	height:10%;
+}
+
+.closepop{
+	position: relative;
+	width: 16%;
+	height: 100%;
+	display:inline-block;
+	cursor:pointer
+}
+
+.pop_top{
+	top: 10%;
+	transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	-moz-transform:translateX(-50%);
+	-o-transform:translateX(-50%);
+}
+.pop_middle {
+	top: 50%;
+	transform:translate(-50%, -50%);
+	-webkit-transform:translate(-50%, -50%);
+	-moz-transform:translate(-50%, -50%);
+	-o-transform:translate(-50%, -50%);
+}
+.lightbox-shadow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.8);
+	opacity: 1;
+	z-index: 1000;
+	display: none;
+	overflow-y: scroll;
+}
+.close-shadow{width:100%;position:absolute;top:0;left:0;right:0;bottom:0}
+.document_overflow{overflow:hidden}
+
+
+.cov_eff_l{
+	position:absolute;
+	top:0;
+	left:0;
+	width:0%;
+	height:100%;
+	background:#000
+}
+.cov_eff_r{
+	position:absolute;
+	top:0;
+	right:0;
+	width:0%;
+	height:100%;
+	background:#000
+}
+/* // 팝업 */
+
+.sub_frame{position: absolute; display:block; overflow:hidden; z-index: 3;}
+.sub_frame iframe{width:100%;height:100%;}
+
+.video_wrap{position:relative;}
+.video3d{
+	position: absolute;
+	width: 100%;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	margin: auto;
+	padding-top:177.77%;
+	overflow: hidden;
+}
+.video3d video{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width:100%;
+	height:100%;
+}
+.carou_wrap{position:absolute; left:0; top:0; top:26.7%; right:0;}
+.carou_wrap2{position:absolute; left:0; top:0; top:45.6%; right:0;}
+
+.slide_wrap.type1{position:absolute; top:27.2%; left:0; right:0;}
+
+.swiper-button-next:after,
+.swiper-button-prev:after{display: none;}
+
+.slide_wrap.type2{position:relative; padding:0 10% 100px; margin-bottom:80px;}
+
+.swipearrow .swiper-slide{position: relative; transform:scale(0.8) }
+.swipearrow .swiper-slide-active{transform:scale(1); transition: all 0.5s ease-in;}
+
+.slide_wrap.type2{position:relative; padding:0 10% 100px; margin-bottom:80px;}
+.slide_wrap.type2 .swiper-pagination{bottom:0; left:0; right:0; width:auto;}
+.slide_wrap.type2 .swiper-pagination-bullet{background-color:#bebeb3; opacity:1; margin:0 4px; width: 10px; height: 10px;}
+.slide_wrap.type2 .swiper-pagination-bullet-active{opacity:1; background-color:#000000;}
+
+.slidefade .swiper-pagination{bottom:10%; left:0; right:16%; width:auto; text-align:right;}
+.slidefade .swiper-pagination-bullet{background-color:transparent; border:1px solid #606060; opacity:1; margin:0 4px; width: 8px; height: 8px;}
+.slidefade .swiper-pagination-bullet-active{opacity:1; background-color:#606060;}
+
+.slide_wrap.type3 .slidefade{position:absolute; top:0; left:50%; width:42.1%; bottom:0;}
+
+.swipebullet .swiper-pagination{bottom:3%; left:0; right:0; width:auto;}
+.swipebullet .swiper-pagination-bullet{background-color:transparent; border:1px solid #a5a5a5; opacity:1; margin:0 4px; width: 10px; height: 10px; background-color:#e7e7e7;}
+.swipebullet .swiper-pagination-bullet-active{opacity:1; background-color:#3e3e3e; border:1px solid #3e3e3e;}
+
+@-webkit-keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.6);
+    transform: scale(.6);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  70% {
+    -webkit-transform: scale(.95);
+    transform: scale(.95);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.6);
+    -ms-transform: scale(.6);
+    transform: scale(.6);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  70% {
+    -webkit-transform: scale(.95);
+    -ms-transform: scale(.95);
+    transform: scale(.95);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.ani04{position:absolute; left:-4%; top:22.2%; width:104.6%;}
+
+.expand100{overflow: hidden; animation-duration: 4.2s;}
+.expand100 img{width: auto !important; height:100%; max-width:none}
+
+
+.cont_wrap ul{overflow: hidden;}
+.cont_wrap ul li{float:left; width:25%; position: relative;}
+.cont_wrap ul li img.active{opacity:0; position:absolute; left:0; top:0; right:0;}
+.cont_wrap ul li:hover img{opacity:0; transition-duration:0.4s;}
+.cont_wrap ul li:hover img.active{opacity:1; transition-duration:0.4s;}
+
+.cont_nav{position:relative;}
+.cont_nav .swipenav{position:absolute; top:0; left:0; right:0; z-index:2;}
+</style>
+
+
+
+<div class="content_wrap">
+	<div class="section_wc">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con00.jpg" alt="" class="img-responsive">
+		<div class="cont_wrap">
+			<ul>
+				<li>
+					<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0001.jpg" alt="" class="img-responsive">
+					<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0001_on.jpg" alt="" class="img-responsive active">
+				</li>
+				<li>
+					<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0002.jpg" alt="" class="img-responsive">
+					<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0002_on.jpg" alt="" class="img-responsive active">
+				</li>
+				<li>
+					<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0003.jpg" alt="" class="img-responsive">
+					<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0003_on.jpg" alt="" class="img-responsive active">
+				</li>
+				<li>
+					<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0004.jpg" alt="" class="img-responsive">
+					<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0004_on.jpg" alt="" class="img-responsive active">
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<!-- 쿠폰영역 -->
+<div class="content_wrap">
+	<div class="section_wc">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_coupon.jpg" alt="" class="img-responsive" usemap="#wissue_coupon">
+	</div>
+</div>
+<map name="wissue_coupon">
+	<area alt="쿠폰 다운로드" title="" href="javascript:wckEventInterface.downloadCoupon(['PPLMK4JNM'])" coords="716,289,1179,482" shape="rect">
+</map>
+
+
+<!-- 01. about -->
+<div class="content_wrap">
+	<div class="section_wc">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con01.jpg" alt="" class="img-responsive">
+	</div>
+</div>
+
+<!-- 3 Keywords -->
+<div class="content_wrap">
+	<div class="section_wc">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con02.jpg" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated fadeInUp ani2s" style="animation-delay:0.4s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0201.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated fadeInUp ani2s" style="animation-delay:1.2s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0202.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated fadeInUp ani2s" style="animation-delay:2s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0203.png" alt="" class="img-responsive">
+	</div>
+</div>
+
+<!-- HISTORY -->
+<div class="content_wrap" style="background-color:#ede5d9;">
+	<div class="section_wc">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con03.jpg" alt="" class="img-responsive">
+		<div class="carou_wrap">
+			<div class="swipeslide__slide swiper-container swipecarou">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0301.jpg" alt="" class="img-responsive">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0302.jpg" alt="" class="img-responsive">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0303.jpg" alt="" class="img-responsive">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0304.jpg" alt="" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- 02. INTERVIEW -->
+<div class="content_wrap">
+	<div class="section_wc">
+		<div class="slide_wrap type3">
+			<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con04.jpg" alt="" class="img-responsive">
+			<div class="swipeslide__slide swiper-container slidefade">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0401.jpg" alt="" class="img-responsive">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0402.jpg" alt="" class="img-responsive">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0403.jpg" alt="" class="img-responsive">
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<!-- 슬라이드 네비게이션 버튼 -->
+			<div class="swiper-button-prev swiper-button-black sw2_prev"></div>
+			<div class="swiper-button-next swiper-button-black sw2_next"></div>
+		</div>
+	</div>
+</div>
+
+<!-- 03. Customers Say -->
+<div class="content_wrap">
+	<div class="section_wc">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con05.jpg" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animate bounceInUp ani2s" style="animation-delay:0.4s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0501.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animate bounceInUp ani2s" style="animation-delay:0.8s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0502.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animate bounceInUp ani2s" style="animation-delay:1.2s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0503.png" alt="" class="img-responsive">
+	</div>
+</div>
+
+
+
+<!-- 4. EDITORIAL -->
+<div class="content_wrap">
+	<div class="section_wc">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con06.jpg" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animate fadeInUp ani2s" style="animation-delay:0.4s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0601.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animate fadeIn ani2s" style="animation-delay:0.6s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0602.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animate fadeInLeft ani2s" style="animation-delay:0.9s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0603.png" alt="" class="img-responsive">
+	</div>
+</div>
+
+<div class="content_wrap"> 
+	<div class="section_wc">
+		<div class="slide_nav">
+			<div class="swiper-container swipecont">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0701.jpg" alt="" class="img-responsive">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0702.jpg" alt="" class="img-responsive" usemap="#wissue_con0702">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-container swipenav">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_nav0101.jpg" alt="" class="img-responsive">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_nav0102.jpg" alt="" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div> 
+	</div>
+</div>
+<map name="wissue_con0702">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306115538" coords="1076,642,1309,749" target="_blank" shape="rect">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306133585" coords="1331,640,1540,753" target="_blank" shape="rect">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306132878" coords="1559,635,1776,749" target="_blank" shape="rect">
+</map>
+
+<div class="content_wrap">
+	<div class="section_wc fade_division animate fadeInUp ani2s" style="animation-delay:0.4s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con08.jpg" alt="" class="img-responsive">
+	</div>
+</div>
+
+<div class="content_wrap">
+	<div class="section_wc">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con09.jpg" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animate fadeInRight ani2s" style="animation-delay:0.7s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0901.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animate fadeInRight ani2s" style="animation-delay:0.3s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0902.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animate blurOn ani2s" style="animation-delay:0.8s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con0903.png" alt="" class="img-responsive">
+	</div>
+	<div class="sec_cover">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con09_cover.jpg" alt="" class="img-responsive" usemap="#wissue_con09">
+	</div>
+</div>
+<map name="wissue_con09">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306133585" coords="1153,925,1374,1026" target="_blank" shape="rect">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306132878" coords="1386,923,1600,1024" target="_blank" shape="rect">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306191838" coords="1615,917,1835,1025" target="_blank" shape="rect">
+</map>
+
+<div class="content_wrap">
+	<div class="section_wc">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con10.jpg" alt="" class="img-responsive" usemap="#wissue_con10">
+	</div>
+	<div class="sub_cover fade_division animate fadeInDown ani2s" style="animation-delay:0.4s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con1001.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animate fadeInUp ani2s" style="animation-delay:0.7s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con1002.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animate fadeInDown ani2s" style="animation-delay:1s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con1003.png" alt="" class="img-responsive">
+	</div>
+</div>
+<map name="wissue_con10">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306192092" coords="1254,690,1489,798" target="_blank" shape="rect">
+</map>
+
+<div class="content_wrap"> 
+	<div class="section_wc">
+		<div class="slide_nav">
+			<div class="swiper-container swipecont">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con1101.jpg" alt="" class="img-responsive" usemap="#wissue_con1101">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con1102.jpg" alt="" class="img-responsive" usemap="#wissue_con1102">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con1103.jpg" alt="" class="img-responsive" usemap="#wissue_con1103">
+					</div>
+				</div>
+			</div>
+			<div class="cont_nav">
+				<div class="swiper-container swipenav">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_nav0301.png" alt="" class="img-responsive">
+						</div>
+						<div class="swiper-slide">
+							<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_nav0302.png" alt="" class="img-responsive">
+						</div>
+						<div class="swiper-slide">
+							<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_nav0303.png" alt="" class="img-responsive">
+						</div>
+					</div>
+				</div>
+				<div class="section_wc">
+					<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con12.jpg" alt="" class="img-responsive">
+				</div>
+				<div class="sub_cover fade_division animated fadeInLeft ani2s" style="animation-delay:0.4s">
+					<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con1201.png" alt="" class="img-responsive">
+				</div>
+				<div class="sub_cover fade_division animated fadeInUp ani2s" style="animation-delay:0.7s">
+					<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con1202.png" alt="" class="img-responsive">
+				</div>
+			</div>
+		</div> 
+	</div>
+</div>
+<map name="wissue_con1101">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306133701" coords="1028,661,1312,773" target="_blank" shape="rect">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306133281" coords="1327,652,1556,768" target="_blank" shape="rect">
+</map>
+<map name="wissue_con1102">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306133701" coords="978,599,1243,698" target="_blank" shape="rect">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306133281" coords="981,719,1225,818" target="_blank" shape="rect">
+</map>
+<map name="wissue_con1103">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306191838" coords="1221,825,1454,930" target="_blank" shape="rect">
+</map>
+
+<div class="content_wrap"> 
+	<div class="section_wc">
+		<div class="slide_nav">
+			<div class="swiper-container swipecont">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con1301.jpg" alt="" class="img-responsive" usemap="#wissue_con1301">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con1302.jpg" alt="" class="img-responsive" usemap="#wissue_con1302">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-container swipenav">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_nav0101.jpg" alt="" class="img-responsive">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_nav0102.jpg" alt="" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div> 
+	</div>
+</div>
+<map name="wissue_con1301">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306133673" coords="1076,249,1294,346" target="_blank" shape="rect">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306133169" coords="1065,374,1310,467" target="_blank" shape="rect">
+</map>
+<map name="wissue_con1302">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306191830" coords="1130,829,1353,951" target="_blank" shape="rect">
+</map>
+
+<div class="content_wrap"> 
+	<div class="section_wc">
+		<div class="slide_nav">
+			<div class="swiper-container swipecont">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con1401.jpg" alt="" class="img-responsive">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con1402.jpg" alt="" class="img-responsive" usemap="#wissue_con1402">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-container swipenav">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_nav0101.jpg" alt="" class="img-responsive">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_nav0102.jpg" alt="" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div> 
+	</div>
+</div>
+<map name="wissue_con1402">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306192098" coords="779,292,1011,385" target="_blank" shape="rect">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306133673" coords="788,409,1008,510" target="_blank" shape="rect">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306133169" coords="1032,408,1248,511" target="_blank" shape="rect">
+</map>
+
+<div class="content_wrap"> 
+	<div class="section_wc">
+		<div class="slide_nav">
+			<div class="swiper-container swipecont">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con1501.jpg" alt="" class="img-responsive" usemap="#wissue_con1501">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con1502.jpg" alt="" class="img-responsive">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-container swipenav">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_nav0101.jpg" alt="" class="img-responsive">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_nav0102.jpg" alt="" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div> 
+	</div>
+</div>
+<map name="wissue_con1501">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306192088" coords="609,256,871,358" target="_blank" shape="rect">
+	<area alt="" href="https://www.wconcept.co.kr/Product/302124959" coords="619,365,800,459" target="_blank" shape="rect">
+</map>
+
+<div class="content_wrap">
+	<div class="section_wc fade_division animate fadeIn ani2s" style="animation-delay:0.3s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con16.jpg" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animate bounce ani2s" style="animation-delay:0.5s">
+		<div class="swipeslide__slide swiper-container slidefade0">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con1601.png" alt="" class="img-responsive">
+				</div>
+				<div class="swiper-slide">
+					<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con1602.png" alt="" class="img-responsive">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="content_wrap"> 
+	<div class="section_wc">
+		<div class="slide_nav">
+			<div class="swiper-container swipecont">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con1701.jpg" alt="" class="img-responsive">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con1702.jpg" alt="" class="img-responsive" usemap="#wissue_con1702">
+					</div>
+				</div>
+			</div>
+			<div class="cont_nav">
+				<div class="swiper-container swipenav">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_nav0201.png" alt="" class="img-responsive">
+						</div>
+						<div class="swiper-slide">
+							<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_nav0202.png" alt="" class="img-responsive">
+						</div>
+					</div>
+				</div>
+				<div class="section_wc">
+					<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con18.jpg" alt="" class="img-responsive">
+				</div>
+				<div class="sub_cover fade_division animated slideInUp ani2s" style="animation-delay:0.2s">
+					<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con18.png" alt="" class="img-responsive">
+				</div>
+				<div class="sec_cover">
+					<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con18_cover.jpg" alt="" class="img-responsive" usemap="#wissue_con18">
+				</div>
+			</div>
+		</div> 
+	</div>
+</div>
+<map name="wissue_con1702">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306191955" coords="120,673,366,787" target="_blank" shape="rect">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306132845" coords="379,682,581,779" target="_blank" shape="rect">
+</map>
+<map name="wissue_con18">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306115546" coords="1153,928,1440,1035" target="_blank" shape="rect">
+</map>
+
+<div class="content_wrap"> 
+	<div class="section_wc">
+		<div class="slide_nav">
+			<div class="swiper-container swipecont">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con1901.jpg" alt="" class="img-responsive">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con1902.jpg" alt="" class="img-responsive" usemap="#wissue_con1902">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-container swipenav">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_nav0101.jpg" alt="" class="img-responsive">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_nav0102.jpg" alt="" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div> 
+	</div>
+</div>
+<map name="wissue_con1902">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306115546" coords="621,741,876,846" target="_blank" shape="rect">
+</map>
+
+<div class="content_wrap">
+	<div class="section_wc fade_division animate fadeInUp ani2s" style="animation-delay:0.4s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con20.jpg" alt="" class="img-responsive">
+	</div>
+</div>
+
+<div class="content_wrap">
+	<div class="section_wc">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con21.jpg" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated fadeInLeft ani2s" style="animation-delay:0.4s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con2101.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated fadeInDown ani2s" style="animation-delay:0.6s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con2102.png" alt="" class="img-responsive">
+	</div>
+	<div class="sec_cover">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_con21_cover.jpg" alt="" class="img-responsive" usemap="#wissue_con21">
+	</div>
+</div>
+<map name="wissue_con21">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306133501" coords="1338,554,1587,655" target="_blank" shape="rect">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306133069" coords="1597,552,1796,659" target="_blank" shape="rect">
+	<area alt="" href="https://www.wconcept.co.kr/Product/306191830" coords="1336,665,1540,773" target="_blank" shape="rect">
+</map>
+
+
+<!-- 05. Event -->
+<div class="content_wrap">
+	<div class="section_wc">
+		<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_event.jpg" alt="" class="img-responsive" usemap="#wissue_event">
+	</div>
+</div>
+<map name="wissue_event">
+	<area alt="유의사항" href="javascript:lightbox('<img src=\'https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_popup.jpg\' class=\'img-responsive\'>', null)" coords="877,687,1029,753" shape="rect">
+</map>
+
+
+
+<div class="content_wrap">
+	<div class="section_wc">
+		<a href="https://display.wconcept.co.kr/brand/102974" target="_blank" class="sec_link">
+			<img src="https://image.wconcept.co.kr/images/img/event/2024/1202_wissue/pc/wissue_bnr.jpg" alt="" class="img-responsive">
+		</a>
+	</div>
+</div>
+
+<!-- 팝업 라이트박스 -->
+<div id="lightbox-shadow" class="lightbox-shadow">
+	<div id="close-shadow" class="close-shadow"></div>
+	<div id="lightbox_wrap">
+		<div id="lightbox" class="lightbox"></div>
+		<div id="closewrap" class="closewrap">
+			<div id="closepop" class="closepop"></div>
+		</div>
+	</div>
+</div>
+<!-- 팝업 라이트박스 끝 -->
+
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.rwdImageMaps.js"></script>
+<script type="text/javascript">
+/* 도큐멘트 시작 시 */
+ $(document).ready(function(e) {  
+  /* 반응형 이미지맵 */
+  $('img[usemap]').rwdImageMaps();
+ });
+</script>
+
+<!-- 스크롤반응, 에니메이트 -->
+<script src="https://image.wconcept.co.kr/images/img/publish/js/wconcept_fade.js"></script>
+<script>
+	
+//스크롤반응, 에니메이트
+wow = new WOW(
+  {
+	boxClass : 'fade_division',
+	animateClass: 'animated',
+	offset:       100,
+	callback:     function(box) {
+	  console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+	}
+  }
+);
+wow.init();
+</script>
+
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.swiper.js"></script>
+<script>
+var fade_slide = new Swiper('.swiper-container.slidefade', {
+	slidesPerView: 1,//한 화면에 보여지는 갯수, 기본 한 화면당 한장
+	effect:'slide',
+	centeredSlides: false,
+	speed:1500,//흘러가는 속도, 현재 한 슬라이드가 완전히 흘러가기까지 10000ms(10초) 소요
+	observer: true,
+	//루프 기능 활성화 하려면 아래 주석을 해제하세요
+	loop: true,
+	autoHeight: true,
+	//자동으로 슬라이드 되게 하시려면 아래 주석을 해제하세요(3500ms, 3.5초)
+	autoplay: false,
+	allowTouchMove: true,
+	pagination: {
+		el: '.slide_wrap.type3 .swiper-pagination',
+		type: 'bullets',
+		clickable: true
+	},
+	navigation: {
+        nextEl: '.slide_wrap.type3 .sw2_next',
+        prevEl: '.slide_wrap.type3 .sw2_prev',
+    },
+});
+var fade_slide2 = new Swiper('.swiper-container.slidefade0', {
+	slidesPerView: 1,//한 화면에 보여지는 갯수, 기본 한 화면당 한장
+	effect:'fade',
+	centeredSlides: false,
+	speed:1400,//흘러가는 속도, 현재 한 슬라이드가 완전히 흘러가기까지 10000ms(10초) 소요
+	observer: true,
+	//루프 기능 활성화 하려면 아래 주석을 해제하세요
+	loop: true,
+	autoHeight: true,
+	//자동으로 슬라이드 되게 하시려면 아래 주석을 해제하세요(3500ms, 3.5초)
+	autoplay: {
+		delay: 2000,
+		disableOnInteraction: false
+	},
+	allowTouchMove: false,
+});
+var arrow_slide1 = new Swiper('.slide_wrap.type1 .swipeslide', {
+	slidesPerView: 2.3,//한 화면에 보여지는 갯수, 기본 한 화면당 한장
+	spaceBetween: 40,
+	slidesOffsetBefore: 40,
+	effect:'slide',
+	centeredSlides: false,
+	speed:2000,//흘러가는 속도, 현재 한 슬라이드가 완전히 흘러가기까지 10000ms(10초) 소요
+	observer: true,
+	//루프 기능 활성화 하려면 아래 주석을 해제하세요
+	loop: true,
+	autoHeight: true,
+	//자동으로 슬라이드 되게 하시려면 아래 주석을 해제하세요(3500ms, 3.5초)
+	autoplay: {
+		delay: 1500,
+		disableOnInteraction: false
+	},
+});
+var carou_slide = new Swiper('.swiper-container.swipecarou', {
+    slidesPerView: 2.3,//한 화면에 보여지는 갯수, 기본 한 화면당 한장
+    effect:'slide',
+	spaceBetween: '1.6%',
+    centeredSlides: false,
+    speed:8000,//흘러가는 속도, 현재 한 슬라이드가 완전히 흘러가기까지 10000ms(10초) 소요
+    observer: true,
+    //루프 기능 활성화 하려면 아래 주석을 해제하세요
+    loop: true,
+    autoHeight: false,
+    allowTouchMove: true,
+    //자동으로 슬라이드 되게 하시려면 아래 주석을 해제하세요(3500ms, 3.5초)
+    autoplay: {
+        delay: 0
+    },
+});
+var arrow_slide = new Swiper('.swiper-container.swipearrow', {
+	slidesPerView: 3 ,//한 화면에 보여지는 갯수, 기본 한 화면당 한장
+	effect:'slide',
+	spaceBetween: "-3%",
+	centeredSlides: true,
+	centerInsufficientSlides: true,
+	speed:1500,//흘러가는 속도, 현재 한 슬라이드가 완전히 흘러가기까지 10000ms(10초) 소요
+	observer: true,
+	//루프 기능 활성화 하려면 아래 주석을 해제하세요
+	loop: true,
+	autoHeight: true,
+	//자동으로 슬라이드 되게 하시려면 아래 주석을 해제하세요(3500ms, 3.5초)
+	autoplay: {
+		delay: 4500,
+		disableOnInteraction: false
+	},
+	allowTouchMove: true,
+	navigation: {
+        nextEl: '.slide_wrap.type2 .sw2_next',
+        prevEl: '.slide_wrap.type2 .sw2_prev',
+    },
+	pagination: {
+		el: '.slide_wrap.type2 .swiper-pagination',
+		type: 'bullets',
+		clickable: true
+	},
+});
+
+$('.slide_nav').each(function (idx, itm) {
+    $(itm).addClass('slide_nav'+idx);
+    $(itm).find('.swipecont').addClass('swipecont'+idx);
+    $(itm).find('.swipenav').addClass('swipenav'+idx);
+
+    var bullet_slide = new Swiper('.swiper-container.swipecont'+idx, {
+        slidesPerView: 1,//한 화면에 보여지는 갯수, 기본 한 화면당 한장
+        effect:'slide',
+        centeredSlides: false,
+        speed:1300,//흘러가는 속도, 현재 한 슬라이드가 완전히 흘러가기까지 10000ms(10초) 소요
+        observer: true,
+        //루프 기능 활성화 하려면 아래 주석을 해제하세요
+        loop: true,
+        autoHeight: true,
+        //자동으로 슬라이드 되게 하시려면 아래 주석을 해제하세요(3500ms, 3.5초)
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
+        allowTouchMove: true,
+        observer: true,
+        observeSlideChildren: true,
+        observeParents: true,
+    });
+    var nav_slide = new Swiper('.swiper-container.swipenav'+idx, {
+        slidesPerView: 1,
+        effect:'fade',
+		fadeEffect: {
+			crossFade: true
+		},
+        //루프 기능 활성화 하려면 아래 주석을 해제하세요
+        loop: true,
+        //자동으로 슬라이드 되게 하시려면 아래 주석을 해제하세요(3500ms, 3.5초)
+        allowTouchMove: false,
+        autoHeight: true,
+        observer: true,
+        observeSlideChildren: true,
+        observeParents: true,
+    });
+    nav_slide.controller.control = bullet_slide;
+    bullet_slide.controller.control = nav_slide;
+});
+</script>
+
+<!-- 팝업 라이트박스 코드 -->
+<script>
+    /* 팝업 라이트박스 코드 */
+
+    function lightbox(insertContent, ajaxContentUrl){
+
+        // remove any previously added content
+        $('#lightbox').empty();
+
+        // insert HTML content
+        if(insertContent != null){
+            $('#lightbox').append(insertContent);
+        }
+
+        // insert AJAX content
+        if(ajaxContentUrl != null){
+            // temporarily add a "Loading..." message in the lightbox
+            $('#lightbox').append('<p class="loading">Loading...</p>');
+
+            // request AJAX content
+            $.ajax({
+                type: 'GET',
+                url: ajaxContentUrl,
+                success:function(data){
+                    // remove "Loading..." message and append AJAX content
+                    $('#lightbox').empty();
+                    $('#lightbox').append(data);
+                },
+                error:function(){
+                    alert('팝업 로드 실패!');
+                }
+            });
+        }
+
+        // move the lightbox to the current window top + 100px
+        //$('#lightbox').css('top', $(window).scrollTop() + 100 + 'px');
+        //$('#closepop_wrap').css('top', $(window).scrollTop() + 100 + 'px');
+
+        // display the lightbox
+        $('#lightbox_wrap').show(500,
+            function(){
+                if($("#lightbox_wrap").height() > window.innerHeight){
+                    $("#lightbox_wrap").removeClass("pop_middle");
+                    $("#lightbox_wrap").addClass("pop_top");
+                }
+                else if($("#lightbox_wrap").height() < window.innerHeight) {
+                    $("#lightbox_wrap").removeClass("pop_top");
+                    $("#lightbox_wrap").addClass("pop_middle");
+                }
+            }
+        );
+        $('#closepop_wrap').show(500);
+        $('#lightbox-shadow').show();
+        $('body').addClass('document_overflow');
+
+    }
+
+    // close the lightbox
+    function closeLightbox(){
+
+        // hide lightbox and shadow <div/>'s
+        $('#lightbox_wrap').hide(500);
+        $('#closepop_wrap').hide(500);
+        $('#lightbox-shadow').hide(0);
+
+        // remove contents of lightbox in case a video or other content is actively playing
+        $('#lightbox').empty();
+        $('body').removeClass('document_overflow');
+    }
+
+    function closeLightbox2(){
+
+        // hide lightbox and shadow <div/>'s
+        $('#lightbox_wrap').hide(500);
+        $('#closepop_wrap').hide(500);
+        $('#lightbox-shadow').hide(0);
+
+        // remove contents of lightbox in case a video or other content is actively playing
+        $('#lightbox').empty();
+        $('body').removeClass('document_overflow');
+    }
+
+    $(function(){
+        closeLightbox();
+        $('#close-shadow').click(function(){
+            closeLightbox();
+        });
+        $('.closepop').click(function(){
+            closeLightbox();
+        });
+        $('.agree_wc').click(function(){
+            closeLightbox();
+        });
+    });
+
+
+    function funcThisSize() {
+        $(".lightbox-shadow").css( 'width', window.innerWidth );
+        $(".lightbox-shadow").css( 'height', window.innerHeight );
+        $("#close-shadow").css( 'height', $('#lightbox img').height );
+    }
+
+    $(function(){
+        $(window).resize( funcThisSize );
+        funcThisSize();
+    });
+
+</script>
+<!--// 팝업 라이트박스 코드 -->

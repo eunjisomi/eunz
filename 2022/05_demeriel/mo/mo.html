@@ -1,0 +1,79 @@
+<!-- 스와이프 슬라이더 -->
+<link rel="stylesheet" href="https://image.wconcept.co.kr/images/img/publish/css/swipeslider.css">
+
+<style type="text/css">	
+.slidearea{position:relative;padding:0px;box-sizing:border-box}
+</style>
+
+<style>	
+html {scroll-behavior: smooth; }
+	
+table, table tbody tr, table tbody td, tr, td {
+  border-spacing: 0;
+  border-style: none;
+  padding: 0;
+}
+body {margin: 0;}
+img {width: 100%; max-width: 100%; height: auto;}
+</style>
+
+<!-- 스와이프 슬라이더 영역 -->
+<div class="con_img_wrap">
+	<div class="slidearea">
+		<div class="swipeslide__slide swiper-container swipefade">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/20220926_demeriel/mo/mo_01-1.jpg"></div>
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/20220926_demeriel/mo/mo_01-2.jpg"></div>
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/20220926_demeriel/mo/mo_01-3.jpg"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="con_img_wrap">
+	<div class="slidearea">
+		<div class="swipeslide__slide swiper-container swipefade">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/20220926_demeriel/mo/mo_02-1.jpg"></div>
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/20220926_demeriel/mo/mo_02-2.jpg"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="con_img_wrap">
+	<div class="slidearea">
+		<div class="swipeslide__slide swiper-container swipefade">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/20220926_demeriel/mo/mo_03-1.jpg"></div>
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/20220926_demeriel/mo/mo_03-2.jpg"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="con_img_wrap">
+	<div class="slidearea">
+		<div class="swipeslide__slide swiper-container swipefade">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/20220926_demeriel/mo/mo_04-1.jpg"></div>
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/20220926_demeriel/mo/mo_04-2.jpg"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.swiper.js"></script>
+<script>
+//swiper slider (버튼 제거 버전)
+document.querySelectorAll('.swiper-container.swipefade').forEach(function(el){
+  new Swiper(el, {
+    slidesPerView: 1,
+    effect: 'fade',
+    loop: true,
+    speed: 1000,
+    autoplay: { delay: 1500 },
+    allowTouchMove: false
+  });
+});
+</script>

@@ -1,0 +1,152 @@
+<!-- 스와이프 슬라이더 css -->
+<link rel="stylesheet" href="https://image.wconcept.co.kr/images/img/publish/css/swipeslider.css">
+
+<style type="text/css">	
+.slidearea{position:relative;padding:0px;box-sizing:border-box}
+</style>
+	
+<style>
+body{margin: 0;}
+		
+/* 이미지맵 스타일시트 */
+img[usemap] {
+border: none;
+height: auto;
+max-width: 100%;
+width: auto;}
+/* 이미지맵 스타일시트 */	
+	
+</style>
+
+
+<!--카루셀 스타일-->
+<style>
+.swiper-wrapper {
+	transition-timing-function: linear;
+}
+</style>
+
+
+
+
+
+
+<div class="con_img_wrap">
+	<div class="slidearea">
+		<div class="swipeslide__slide swiper-container swipefade">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2024/1226_nothing/pc/pc_01-1.jpg" usemap=""></div>
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2024/1226_nothing/pc/pc_01-2.jpg" usemap=""></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="con_img_wrap">
+	<div class="slidearea">
+		<div class="swipeslide__slide swiper-container swipefade">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2024/1226_nothing/pc/pc_02-1.jpg" usemap=""></div>
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2024/1226_nothing/pc/pc_02-2.jpg" usemap=""></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="con_img_wrap"  align="center" style="margin:0 auto;">
+	<div class="slidearea">
+		<div class="swipeslide__slide swiper-container swipecarou">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide ca-slide-width"><img src="https://image.wconcept.co.kr/images/img/event/2024/1226_nothing/pc/pc_03-1.jpg"></div>
+				<div class="swiper-slide ca-slide-width"><img src="https://image.wconcept.co.kr/images/img/event/2024/1226_nothing/pc/pc_03-2.jpg"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<div class="con_img_wrap"><img src="https://image.wconcept.co.kr/images/img/event/2024/1226_nothing/pc/pc_04.jpg" usemap="#Map">
+  <map name="Map">
+    <area shape="rect" coords="702,404,1282,694" href="https://display.wconcept.co.kr/brand/103899">
+  </map>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--스크립트-->
+
+<!-- 이미지맵 js -->
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.rwdImageMaps.js"></script>
+<script type="text/javascript">
+    /* 도큐멘트 시작 시 */
+    $(document).ready(function(e) {
+        /* 반응형 이미지맵 */
+        $('img[usemap]').rwdImageMaps();
+    });
+</script>
+<!--// 이미지맵 js -->
+
+
+
+<!-- 스와이프 슬라이드 js (페이드인아웃) -->
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.swiper.js"></script>
+<script>
+	//페이드인아웃
+    var fade_slide = new Swiper('.swiper-container.swipefade', {
+        slidesPerView: 1,
+        effect:'fade',
+        speed:1200,
+
+        //루프 기능 활성화 하려면 아래 주석을 해제하세요
+        loop: true,
+
+        //자동으로 슬라이드 되게 하시려면 아래 주석을 해제하세요(3500ms, 3.5초)
+        autoplay: {
+            delay: 1200
+        },
+        allowTouchMove: false,
+        autoHeight: true,
+        observer: true,
+        observeSlideChildren: true,
+        observeParents: true,
+    });
+</script>
+<!--// 스와이프 슬라이드 js (페이드인아웃) -->
+
+
+<!-- 스와이프 슬라이드 js (카루셀) -->
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.swiper.js"></script>
+<script>
+    // 카루셀
+    var carou_slide = new Swiper('.swiper-container.swipecarou', {
+		slidesPerView: 1,//헌 화면에 보여지는 갯수, 기본 한 화면당 한장
+		effect:'slide',
+		centeredSlides: true,
+		speed:7000,//흘러가는 속도, 현재 한 슬라이드가 완전히 흘러가기까지 10000ms(10초) 소요
+
+		observer: true,
+
+		//루프 기능 활성화 하려면 아래 주석을 해제하세요
+		loop: true,
+
+		//자동으로 슬라이드 되게 하시려면 아래 주석을 해제하세요(3500ms, 3.5초)
+		autoplay: {
+			delay: 0
+		},
+	});
+
+</script>
+<!--// 스와이프 슬라이드 js (카루셀) -->

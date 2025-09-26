@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>W컨셉 스와이프 슬라이더 (샵버튼 없음)</title>
+  <link rel="stylesheet" href="https://image.wconcept.co.kr/images/img/publish/css/swipeslider.css">
+  <style>
+    .slidearea{position:relative;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    table, table tbody tr, table tbody td, tr, td{border-spacing:0;border-style:none;padding:0}
+    body{margin:0}
+    img{border:none;height:auto;max-width:100%;width:auto}
+    /* PC 버전 폭 고정 */
+    .con_img_wrap{max-width:1902px;margin:0 auto;}
+  </style>
+</head>
+<body>
+
+<!-- 스와이프 슬라이더 영역 1 -->
+<div class="con_img_wrap">
+  <div class="slidearea">
+    <div class="swipeslide__slide swiper-container swipefade">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/20220926_demeriel/pc/pc_01-1.jpg"></div>
+        <div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/20220926_demeriel/pc/pc_01-2.jpg"></div>
+        <div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/20220926_demeriel/pc/pc_01-3.jpg"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 스와이프 슬라이더 영역 2 -->
+<div class="con_img_wrap">
+  <div class="slidearea">
+    <div class="swipeslide__slide swiper-container swipefade">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://image.wconcept.co.kr/images/img/event/20220926_demeriel/pc/pc_02-1.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://image.wconcept.co.kr/images/img/event/20220926_demeriel/pc/pc_02-2.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 스와이프 슬라이더 영역 3 -->
+<div class="con_img_wrap">
+  <div class="slidearea">
+    <div class="swipeslide__slide swiper-container swipefade">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://image.wconcept.co.kr/images/img/event/20220926_demeriel/pc/pc_03-1.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://image.wconcept.co.kr/images/img/event/20220926_demeriel/pc/pc_03-2.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 스와이프 슬라이더 영역 4 -->
+<div class="con_img_wrap">
+  <div class="slidearea">
+    <div class="swipeslide__slide swiper-container swipefade">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://image.wconcept.co.kr/images/img/event/20220926_demeriel/pc/pc_04-1.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://image.wconcept.co.kr/images/img/event/20220926_demeriel/pc/pc_04-2.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JS -->
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.swiper.js"></script>
+<script>
+  document.querySelectorAll('.swiper-container.swipefade').forEach(function(el){
+    new Swiper(el, {
+      slidesPerView: 1,
+      effect: 'fade',
+      loop: true,
+      speed: 1000,
+      autoplay: { delay: 1500 }
+    });
+  });
+</script>
+</body>
+</html>
