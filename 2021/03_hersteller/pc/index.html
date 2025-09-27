@@ -6,6 +6,34 @@
 </style>
 	
 <style>	
+
+/* ===== Width fix (PC) ===== */
+.con_img_wrap,
+.slidearea,
+.swiper-container {
+  max-width: 1902px !important;
+  margin: 0 auto !important;
+}
+
+.swiper-wrapper,
+.swiper-slide { width: 100% !important; margin:0 !important; padding:0 !important; }
+
+img {
+  display: block;          /* 인라인 공백 제거 */
+  width: 100% !important;  /* 컨테이너에 맞춰 채움 */
+  max-width: 100% !important;
+  height: auto !important;
+  border: 0;
+  vertical-align: top;
+}
+
+/* overflow 튀어나옴 차단 (페이드 효과에서 흔함) */
+.swiper-container { overflow: hidden !important; }
+
+/* 테이블 초기화(혹시 포함될 경우) */
+table, tr, td { border-spacing:0; border:0; padding:0; }
+	
+	
 html {scroll-behavior: smooth;}
 table {border-spacing:0;border-style:none;padding:0}
 table tbody tr, table tbody td, tr, td {border-spacing:0;border-style:none;padding:0}

@@ -5,19 +5,45 @@
 .slidearea{position:relative;padding:0px;box-sizing:border-box}
 </style>
 
-<style>	
-html {scroll-behavior: smooth; }
-table, tr, td {border-spacing:0;border-style:none;padding:0}
-body{margin:0}
-img{width:100%; max-width:100%;}
+<style>
+.slidearea {
+  position: relative;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.con_img_wrap {
+  line-height: 0;   /* 이미지 사이 여백 제거 */
+  font-size: 0;     /* 줄바꿈 시 공백 제거 */
+}
+
+html { scroll-behavior: smooth; }
+table, tr, td { border-spacing: 0; border-style: none; padding: 0; }
+body { margin: 0; }
+img { width: 100%; max-width: 100%; }
+
 /* 이미지맵 스타일시트 */
 img[usemap] {
-  border:none;
-  height:auto;
-  max-width:100%;
-  width:auto;
+  border: none;
+  height: auto;
+  max-width: 100%;
+  width: auto;
 }
+
+/* ===== Width fix (MO) ===== */
+.con_img_wrap,
+.slidearea,
+.swiper-container {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+}
+/* 슬라이더 높이/오버플로 보정 */
+.swiper-container { height: auto !important; overflow: visible; }
+.swiper-wrapper   { height: auto !important; }
+.swiper-slide     { height: auto !important; }
+	
 </style>
+
 
 <!-- 스와이프 슬라이더 영역 -->
 <div class="con_img_wrap">
@@ -54,23 +80,29 @@ img[usemap] {
   <img src="https://image.wconcept.co.kr/images/img/event/20210902_hersteller/mo_06.jpg">
 </div>
 
+
+
+
 <script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.swiper.js"></script>
 <script>
-//swiper slider (유지)
-var default_slide6 = new Swiper('.swiper-container.swipefade', {
-	slidesPerView: 1,
-	effect: 'fade',
-	navigation: { nextEl: '.sw6_next', prevEl: '.sw6_prev' },
-	loop: true,
-	speed: 1200,
-	autoplay: { delay: 1500 },
-});
+  // 이미지가 모두 로드된 다음에 초기화해야 페이드에서 높이가 정확히 잡힘
+  window.addEventListener('load', function(){
+    document.querySelectorAll('.swiper-container.swipefade').forEach(function(el){
+      new Swiper(el, {
+        slidesPerView: 1,
+        effect: 'fade',
+        loop: true,
+        speed: 1200,
+        autoplay: { delay: 1500 },
+
+        // 높이 문제 해결 옵션
+        autoHeight: true,
+        preloadImages: true,
+        updateOnImagesReady: true,
+        observer: true,
+        observeParents: true
+      });
+    });
+  });
 </script>
 
-<!-- 이미지맵 제거했으므로 이 스크립트는 사실 필요 없음 -->
-<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.rwdImageMaps.js"></script>
-<script>
-$(document).ready(function(){ 
-  // $('img[usemap]').rwdImageMaps();  // 제거됨
-});
-</script>
