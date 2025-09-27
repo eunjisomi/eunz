@@ -1,0 +1,215 @@
+<!-- 스와이프 슬라이더 코드 -->
+<link rel="stylesheet" href="https://image.wconcept.co.kr/images/img/publish/css/swipeslider.css">
+<style>  
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+         
+    .swipe_cv{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        z-index:1
+    }  
+</style>
+
+
+<!--카루셀 스타일-->
+<style>
+.swiper-wrapper {
+	transition-timing-function: linear;
+}
+/* ===== Width fix (MO) ===== */
+.con_img_wrap,
+.slidearea,
+.swiper-container {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+}
+
+
+/* 슬라이더 높이/오버플로 보정 */
+.swiper-container { height: auto !important; overflow: visible; }
+.swiper-wrapper   { height: auto !important; }
+.swiper-slide     { height: auto !important; }
+/* ===== MO 카루셀 800px 박스 고정 ===== */
+:root { --mo-width: 800px; }
+
+/* 페이지 전체 가로 스크롤 방지 */
+html, body { margin: 0; padding: 0; overflow-x: hidden; }
+
+/* 컨테이너: 800px 박스, 가운데 정렬, 넘침 잘라내기 */
+.con_img_wrap,
+.swiper-container {
+  width: 100% !important;
+  max-width: var(--mo-width) !important;
+  margin: 0 auto !important;
+  overflow: hidden !important;
+}
+
+/* 래퍼/슬라이드 기본 정렬 */
+.swiper-wrapper { display: flex !important; }
+.swiper-slide   { flex: 0 0 100% !important; }
+
+/* 슬라이드 이미지: 박스에 딱 맞추기 */
+.swiper-slide img {
+  display: block;
+  width: 100% !important;
+  max-width: var(--mo-width) !important;
+  height: auto !important;
+  margin: 0 auto;
+}
+	
+</style>
+
+
+<!--카루셀 스타일-->
+<style>
+.swiper-wrapper {
+	transition-timing-function: linear;
+}
+</style>
+
+
+
+
+
+
+
+
+<div class="con_img_wrap"  align="center" style="margin:0 auto;">
+    <div class="slidearea">
+		
+        <img src="https://image.wconcept.co.kr/images/img/event/2025/0131_25bag/mo/mo_01_bg.jpg">
+		    <div class="swipe_cv"><!-- bg -->
+				
+          <div class="swipeslide__slide swiper-container swipecarou">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide ca-slide-width">
+                      <img src="https://image.wconcept.co.kr/images/img/event/2025/0131_25bag/mo/mo_01_img1.png"><!-- 흘라가는 이미지 삽입 -->
+                  </div>
+                  <div class="swiper-slide ca-slide-width">
+                      <img src="https://image.wconcept.co.kr/images/img/event/2025/0131_25bag/mo/mo_01_img2.png"><!-- 흘라가는 이미지 삽입 -->
+                  </div>				
+                  <div class="swiper-slide ca-slide-width">
+                      <img src="https://image.wconcept.co.kr/images/img/event/2025/0131_25bag/mo/mo_01_img3.png"><!-- 흘라가는 이미지 삽입 -->
+                  </div>
+                  <div class="swiper-slide ca-slide-width">
+                      <img src="https://image.wconcept.co.kr/images/img/event/2025/0131_25bag/mo/mo_01_img4.png"><!-- 흘라가는 이미지 삽입 -->
+                  </div>					  
+              </div>
+          </div>
+        </div>
+		
+        <div class="swipe_cv"><!-- 위에 글자가 커버가되는 이미지 삽입 -->
+            <img src="https://image.wconcept.co.kr/images/img/event/2025/0131_25bag/mo/mo_01_txt.png">
+        </div>
+		
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- 일반 -->
+<div class="con_img_wrap"><img src="https://image.wconcept.co.kr/images/img/event/2025/0131_25bag/mo/mo_02.jpg"></div>
+
+
+
+<!--각 섹션마다 cut-->
+<div class="con_img_wrap"><img src="https://image.wconcept.co.kr/images/img/event/2025/0131_25bag/mo/mo_03.jpg"></div>
+<div class="con_img_wrap"><img src="https://image.wconcept.co.kr/images/img/event/2025/0131_25bag/mo/mo_04.jpg"></div>
+<div class="con_img_wrap"><img src="https://image.wconcept.co.kr/images/img/event/2025/0131_25bag/mo/mo_05.jpg"></div>
+<div class="con_img_wrap"><img src="https://image.wconcept.co.kr/images/img/event/2025/0131_25bag/mo/mo_06.jpg"></div>
+<div class="con_img_wrap"><img src="https://image.wconcept.co.kr/images/img/event/2025/0131_25bag/mo/mo_07.jpg"></div>
+
+
+
+
+
+
+
+
+
+
+<!--css-->
+
+<!-- MO에서만 기입 js -->
+<script>
+    $(document).on("touchend", function () {
+        $("body").blur();
+    });
+</script>
+<!--// MO에서만 기입 js -->
+
+
+<!-- 이미지맵 js -->
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.rwdImageMaps.js"></script>
+<script type="text/javascript">
+    /* 도큐멘트 시작 시 */
+    $(document).ready(function(e) {
+        /* 반응형 이미지맵 */
+        $('img[usemap]').rwdImageMaps();
+    });
+</script>
+<!--// 이미지맵 js -->
+
+
+<!-- 카운트다운 js -->
+<script type="text/javascript" src="https://image.wconcept.co.kr/images/img/publish/js/num_countdown2.js"></script>
+<!--// 카운트다운 js -->
+
+
+<!-- 스와이프 슬라이드 js (페이드인아웃) -->
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.swiper.js"></script>
+<script>
+	//페이드인아웃
+    var fade_slide = new Swiper('.swiper-container.swipefade', {
+        slidesPerView: 1,
+        effect:'fade',
+        speed:1200,
+
+        //루프 기능 활성화 하려면 아래 주석을 해제하세요
+        loop: true,
+
+        //자동으로 슬라이드 되게 하시려면 아래 주석을 해제하세요(3500ms, 3.5초)
+        autoplay: {
+            delay: 1200
+        },
+        allowTouchMove: false,
+        autoHeight: true,
+        observer: true,
+        observeSlideChildren: true,
+        observeParents: true,
+    });
+</script>
+<!--// 스와이프 슬라이드 js (페이드인아웃) -->
+
+
+<!-- 스와이프 슬라이드 js (카루셀) -->
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.swiper.js"></script>
+<script>
+    // 카루셀
+    var carou_slide = new Swiper('.swiper-container.swipecarou', {
+		slidesPerView: 1,//헌 화면에 보여지는 갯수, 기본 한 화면당 한장
+		effect:'slide',
+		centeredSlides: true,
+		speed:10000,//흘러가는 속도, 현재 한 슬라이드가 완전히 흘러가기까지 10000ms(10초) 소요
+
+		observer: true,
+
+		//루프 기능 활성화 하려면 아래 주석을 해제하세요
+		loop: true,
+
+		//자동으로 슬라이드 되게 하시려면 아래 주석을 해제하세요(3500ms, 3.5초)
+		autoplay: {
+			delay: 0
+		},
+	});
+
+</script>
+<!--// 스와이프 슬라이드 js (카루셀) -->
