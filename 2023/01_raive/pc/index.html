@@ -1,0 +1,391 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://image.wconcept.co.kr/images/img/publish/css/wconcept_ani.css">
+<link rel="stylesheet" href="https://image.wconcept.co.kr/images/img/publish/css/swipeslider.css">
+<link rel="stylesheet" href="https://image.wconcept.co.kr/images/img/publish/css/stickynav/pc_default.css">
+
+<style>
+html, body, ul, li, ol, dl, dd, dt, p, div{margin:0;padding:0;}
+ul, li{list-style:none}
+area{
+	outline:none;
+	-webkit-outline:none;
+}
+	
+.section_wc{
+	width: 100%;
+	position: relative;
+	margin:0 auto; 
+	overflow: hidden;
+}
+.main_cover{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:1
+}
+.sub_cover{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	z-index:2;
+	top:0;
+	vertical-align: top;
+}
+.sec_cover{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	z-index:2;
+	opacity:0;
+}
+.swipecarou .swiper-wrapper {
+  transition-timing-function: linear;
+}
+         
+.swipe_cv{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:1
+}  
+.anivibe{animation:anivibe 1.8s alternate infinite 2s;}
+@keyframes anivibe{
+	0%{
+		transform: translateY(0);
+	}
+	100%{
+		transform: translateY(-11px);
+	}
+}
+
+
+/* ===== Width fix (PC) ===== */
+.con_img_wrap,
+.slidearea,
+.swiper-container {
+  max-width: 1902px !important;
+  margin: 0 auto !important;
+}
+
+.swiper-wrapper,
+.swiper-slide { width: 100% !important; margin:0 !important; padding:0 !important; }
+
+img {
+  display: block;          /* 인라인 공백 제거 */
+  width: 100% !important;  /* 컨테이너에 맞춰 채움 */
+  max-width: 100% !important;
+  height: auto !important;
+  border: 0;
+  vertical-align: top;
+}
+
+/* overflow 튀어나옴 차단 (페이드 효과에서 흔함) */
+.swiper-container { overflow: hidden !important; }
+
+/* 테이블 초기화(혹시 포함될 경우) */
+table, tr, td { border-spacing:0; border:0; padding:0; }
+
+/* 슬라이더 높이/오버플로 보정 */
+.swiper-container { height: auto !important; overflow: visible; }
+.swiper-wrapper   { height: auto !important; }
+.swiper-slide     { height: auto !important; }
+
+	
+</style>
+
+<div class="content_wrap">
+	<div class="section_wc">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_top.jpg" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated fadeIn ani2s" style="animation-delay:0.1s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_top_txt01.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated fadeIn ani2s" style="animation-delay:0.4s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_top_txt.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated fadeInUp ani2s" style="animation-delay:0.4s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_top_tit.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated fadeInDown ani2s" style="animation-delay:0.4s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_top_txt02.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated fadeInRight ani2s" style="animation-delay:0.4s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_top01.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated fadeInUp ani2s" style="animation-delay:0.6s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_top02.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated fadeInDown ani2s" style="animation-delay:0.8s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_top03.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated fadeInLeft ani2s" style="animation-delay:0.9s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_top04.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated fadeInUp ani2s" style="animation-delay:1s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_top05.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated fadeInRight ani2s" style="animation-delay:1.2s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_top06.png" alt="" class="img-responsive">
+	</div>
+</div>
+
+
+
+<div class="content_wrap" style="background-color:#070707;">
+	<div class="section_wc">
+		<div class="swiper-container slidefade">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con0101.jpg" alt="" class="img-responsive" usemap="#raive_con01"></div>	
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con0102.jpg" alt="" class="img-responsive" usemap="#raive_con01"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<map name="raive_con01">
+	<area target="_blank" alt="" title="" href="https://www.wconcept.co.kr/Product/303278832" coords="136,800,788,918" shape="rect">
+</map>	
+
+
+<div class="content_wrap">
+	<div class="section_wc">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con02.jpg" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated blurOn ani2s" style="animation-delay:0.1s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con02_re.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated fadeIn ani2s" style="animation-delay:1.5s">
+		<div class="swiper-container slideblink">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con0201.png" alt="" class="img-responsive"></div>	
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con0202.png" alt="" class="img-responsive"></div>
+			</div>
+		</div>
+	</div>
+	<div class="sub_cover fade_division animated fadeIn ani2s" style="animation-delay:1.6s">
+		<div class="anivibe">
+			<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con0203.png" alt="" class="img-responsive">
+		</div>
+	</div>
+	<div class="sec_cover">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con02_bg.jpg" alt="" class="img-responsive">
+	</div>
+</div>
+
+<div class="content_wrap">
+	<div class="section_wc">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con03.jpg" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated fadeIn ani2s">
+		<div class="swiper-container slideblink">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con0301.png" alt="" class="img-responsive"></div>	
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con0302.png" alt="" class="img-responsive"></div>
+			</div>
+		</div>
+	</div>
+	<div class="sec_cover">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con03_bg.jpg" alt="" class="img-responsive" usemap="#raive_con03">
+	</div>
+</div>
+<map name="raive_con03">
+	<area target="_blank" alt="" title="" href="https://www.wconcept.co.kr/Product/303278829" coords="1240,1230,1784,1356" shape="rect">
+</map>	
+
+<div class="content_wrap">
+	<div class="section_wc">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con04.jpg" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated slideInUp ani2s" style="animation-delay:0.1s">
+		<div class="fade_division animated swing ani2s" style="animation-delay:0.1s">
+			<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con04.png" alt="" class="img-responsive">
+		</div>
+	</div>
+	<div class="fade_division animated fadeIn ani2s" style="animation-delay:1.2s; position:absolute; width:31.3%; left:47.1%; top:52.3%; z-index:2;">
+		<div class="fade_division animated tada ani2s" style="animation-delay:1.2s;">
+			<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con04_img.png" alt="" class="img-responsive">
+		</div>
+	</div>
+	<div class="sec_cover">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con04_bg.jpg" alt="" class="img-responsive" usemap="#raive_con04">
+	</div>
+</div>
+<map name="raive_con04">
+	<area target="_blank" alt="" title="" href="https://www.wconcept.co.kr/Product/303278831" coords="220,906,882,1056" shape="rect">
+</map>	
+
+<div class="content_wrap">
+	<div class="section_wc">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con05.jpg" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover">
+		<div class="swiper-container slideblink">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con0501.png" alt="" class="img-responsive"></div>	
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con0502.png" alt="" class="img-responsive"></div>
+			</div>
+		</div>
+	</div>
+	<div class="sec_cover">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con05_bg.jpg" alt="" class="img-responsive" usemap="#raive_con05">
+	</div>
+</div>
+<map name="raive_con05">
+	<area target="_blank" alt="" title="" href="https://www.wconcept.co.kr/Product/303278833" coords="1160,1352,1674,1550" shape="rect">
+</map>	
+
+<div class="content_wrap" style="background-color:#212121;">
+	<div class="section_wc">
+		<div class="swiper-container slidefade">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con0601.jpg" alt="" class="img-responsive" usemap="#raive_con06"></div>	
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con0602.jpg" alt="" class="img-responsive" usemap="#raive_con06"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<map name="raive_con06">
+	<area target="_blank" alt="" title="" href="https://www.wconcept.co.kr/Product/303278830" coords="162,810,796,934" shape="rect">
+</map>	
+
+<div class="content_wrap">
+	<div class="section_wc">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con07.jpg" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con07_r.png" alt="" class="img-responsive" usemap="#raive_con02">
+	</div>
+	<div class="sub_cover fade_division animated fadeIn ani2s" style="animation-delay:0.5s">
+		<div class="anivibe">
+			<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con0701.png" alt="" class="img-responsive">
+		</div>
+	</div>
+	<div class="sub_cover fade_division animated fadeIn ani2s" style="animation-delay:1.5s">
+		<div class="swiper-container slideblink">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con0702.png" alt="" class="img-responsive"></div>	
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con0703.png" alt="" class="img-responsive"></div>
+			</div>
+		</div>
+	</div>
+	<div class="sec_cover">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con07_bg.jpg" alt="" class="img-responsive">
+	</div>
+</div>
+
+<div class="content_wrap">
+	<div class="section_wc">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con08.jpg" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated fadeInLeft ani2s" style="animation-delay:1s">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con0802.png" alt="" class="img-responsive">
+	</div>
+	<div class="sub_cover fade_division animated slideInUp ani2s" style="animation-delay:0.1s">
+		<div class="fade_division animated swing ani2s" style="animation-delay:0.1s">
+			<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con0801.png" alt="" class="img-responsive">
+		</div>
+	</div>
+	<div class="sub_cover fade_division animated fadeIn ani2s" style="animation-delay:1.4s">
+		<div class="swiper-container slideblink">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con0803.png" alt="" class="img-responsive"></div>	
+				<div class="swiper-slide"><img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con0804.png" alt="" class="img-responsive"></div>
+			</div>
+		</div>
+	</div>
+	<div class="sec_cover">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_con08_bg.jpg" alt="" class="img-responsive" usemap="#raive_con08">
+	</div>
+</div>
+<map name="raive_con08">
+	<area target="_blank" alt="" title="" href="https://www.wconcept.co.kr/Product/303278814" coords="642,1488,1092,1662" shape="rect">
+</map>	
+
+<div class="content_wrap" style="margin-bottom:20px;">
+	<div class="section_wc">
+		<img src="https://image.wconcept.co.kr/images/img/event/2023/0811_raive/pc/raive_bottom.jpg" alt="" class="img-responsive" usemap="#raive_bottom">
+	</div>
+</div>
+<map name="raive_bottom">
+	<area target="_blank" alt="" title="" href="https://www.wconcept.co.kr/brand/103714" coords="740,72,1168,324" shape="rect">
+</map>	
+
+
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.rwdImageMaps.js"></script>
+<script type="text/javascript">
+/* 도큐멘트 시작 시 */
+ $(document).ready(function(e) {  
+  /* 반응형 이미지맵 */
+  $('img[usemap]').rwdImageMaps();
+ });
+</script>
+
+
+<!-- 스크롤반응, 에니메이트 -->
+<script src="https://image.wconcept.co.kr/images/img/publish/js/wconcept_fade.js"></script>
+<script>
+	
+//스크롤반응, 에니메이트
+wow = new WOW(
+  {
+	boxClass : 'fade_division',
+	animateClass: 'animated',
+	offset:       100,
+	callback:     function(box) {
+	  console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+	}
+  }
+);
+wow.init();
+</script>
+
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.swiper.js"></script>
+<script>
+var fade_slide = new Swiper('.swiper-container.slidefade', {
+
+	slidesPerView: 1,
+	effect:'fade',
+	speed:1500,
+
+	//루프 기능 활성화 하려면 아래 주석을 해제하세요
+	loop: true,
+
+	//자동으로 슬라이드 되게 하시려면 아래 주석을 해제하세요(3500ms, 3.5초)
+	autoplay: {
+		delay: 1500
+	},
+	allowTouchMove: false,
+	autoHeight: true,
+	observer: true,
+	observeSlideChildren: true,
+	observeParents: true,
+});
+
+var blink_slide = new Swiper('.swiper-container.slideblink', {
+	slidesPerView: 1,
+	effect:'fade',
+	speed:0,
+	fadeEffect: {
+		crossFade: true
+	},
+	//루프 기능 활성화 하려면 아래 주석을 해제하세요
+	loop: true,
+
+	//자동으로 슬라이드 되게 하시려면 아래 주석을 해제하세요(3500ms, 3.5초)
+	autoplay: {
+		delay: 1300
+	},
+	allowTouchMove: false,
+	autoHeight: true,
+	observer: true,
+	observeSlideChildren: true,
+	observeParents: true,
+});
+</script>
