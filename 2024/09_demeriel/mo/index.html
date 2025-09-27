@@ -1,0 +1,143 @@
+<!-- 스와이프 슬라이더 -->
+<link rel="stylesheet" href="https://image.wconcept.co.kr/images/img/publish/css/swipeslider.css">
+
+
+<style type="text/css">	
+.slidearea{position:relative;padding:0px;box-sizing:border-box}
+</style>
+
+
+<style>	
+body{margin: 0;}
+img{width: 100%; max-width: 100%;}
+	
+        
+/* 이미지맵 스타일시트 */
+img[usemap] {
+border: none;
+height: auto;
+max-width: 100%;
+width: auto;}
+/* 이미지맵 스타일시트 */
+	
+/* ===== Width fix (MO) ===== */
+.con_img_wrap,
+.slidearea,
+.swiper-container {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+}
+
+
+/* 슬라이더 높이/오버플로 보정 */
+.swiper-container { height: auto !important; overflow: visible; }
+.swiper-wrapper   { height: auto !important; }
+.swiper-slide     { height: auto !important; }
+	
+</style>
+
+
+
+
+
+
+<!-- 스와이프 슬라이더 영역 -->
+<div class="con_img_wrap">
+	<div class="slidearea">
+		<div class="swipeslide__slide swiper-container swipefade">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="https://image.wconcept.co.kr/images/img/event/2024/0205_demeriel/mo_01-1.jpg" usemap="">
+				</div>
+				<div class="swiper-slide">
+					<img src="https://image.wconcept.co.kr/images/img/event/2024/0205_demeriel/mo_01-2.jpg" usemap="">
+				</div>
+				<div class="swiper-slide">
+					<img src="https://image.wconcept.co.kr/images/img/event/2024/0205_demeriel/mo_01-3.jpg" usemap="">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- 스와이프 슬라이더 영역 -->
+<div class="con_img_wrap">
+	<div class="slidearea">
+		<div class="swipeslide__slide swiper-container swipefade">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="https://image.wconcept.co.kr/images/img/event/2024/0205_demeriel/mo_02-1.jpg" usemap="#Map">
+                    <map name="Map">
+                      <area shape="rect" coords="171,208,635,757" href="https://www.wconcept.co.kr/Product/305645123">
+                      <area shape="rect" coords="194,3153,608,3701" href="https://www.wconcept.co.kr/Product/302296081">
+                      <area shape="rect" coords="167,6082,635,6608" href="https://www.wconcept.co.kr/Product/303582738">
+                      <area shape="rect" coords="190,8850,592,9419" href="https://www.wconcept.co.kr/Product/304069207">
+                      <area shape="rect" coords="36,11780,645,12285" href="https://www.wconcept.co.kr/Product/302715653">
+                    </map>
+				</div>
+				<div class="swiper-slide">
+				  <img src="https://image.wconcept.co.kr/images/img/event/2024/0205_demeriel/mo_02-2.jpg" usemap="#Map">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+$(document).on("touchend", function () {
+    $("body").blur();
+});
+</script>
+
+
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.swiper.js"></script>
+
+<script>
+//swiper slider
+var default_slide6 = new Swiper('.swiper-container.swipefade', {
+
+	slidesPerView: 1,
+	effect: 'fade',
+	mousewheelControl: false,
+	draggable:false,
+	slideToClickedSlide:false,
+	simulateTouch:false,
+	allowTouchMove:false,
+      navigation: {
+        nextEl: '.sw6_next',
+        prevEl: '.sw6_prev',
+      },
+
+	loop: true,
+	speed: 1000, //다음이미지로 변경되는 속도 . 1000 = 1초
+
+	autoplay: {
+		delay: 1500 //다음이미지로 넘어가기 전 대기시간. 1000 = 1초
+	},
+});
+</script>
+
+
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.rwdImageMaps.js"></script>
+<script type="text/javascript">
+/* 도큐멘트 시작 시 */
+ $(document).ready(function(e) {  
+  /* 반응형 이미지맵 */
+  $('img[usemap]').rwdImageMaps();
+ });
+</script>

@@ -1,0 +1,174 @@
+<!-- 스와이프 슬라이더 코드 -->
+<link rel="stylesheet" href="https://image.wconcept.co.kr/images/img/publish/css/swipeslider.css">
+<style>  
+.swipecarou .swiper-wrapper {
+  transition-timing-function: linear;
+}
+         
+    .swipe_cv{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        z-index:1
+    }  
+</style>
+
+
+
+
+
+<!-- 스와이프 슬라이더 -->
+<link rel="stylesheet" href="https://image.wconcept.co.kr/images/img/publish/css/swipeslider.css">
+
+<style type="text/css">	
+.slidearea{position:relative;padding:0px;box-sizing:border-box}
+</style>
+	
+<style>
+body{margin: 0;}
+		
+/* 이미지맵 스타일시트 */
+img[usemap] {
+border: none;
+height: auto;
+max-width: 100%;
+width: auto;}
+/* 이미지맵 스타일시트 */	
+	
+/* ===== Width fix (PC) ===== */
+.con_img_wrap,
+.slidearea,
+.swiper-container {
+  max-width: 1902px !important;
+  margin: 0 auto !important;
+}
+
+.swiper-wrapper,
+.swiper-slide { width: 100% !important; margin:0 !important; padding:0 !important; }
+
+img {
+  display: block;          /* 인라인 공백 제거 */
+  width: 100% !important;  /* 컨테이너에 맞춰 채움 */
+  max-width: 100% !important;
+  height: auto !important;
+  border: 0;
+  vertical-align: top;
+}
+
+/* overflow 튀어나옴 차단 (페이드 효과에서 흔함) */
+.swiper-container { overflow: hidden !important; }
+
+/* 테이블 초기화(혹시 포함될 경우) */
+table, tr, td { border-spacing:0; border:0; padding:0; }
+
+/* 슬라이더 높이/오버플로 보정 */
+.swiper-container { height: auto !important; overflow: visible; }
+.swiper-wrapper   { height: auto !important; }
+.swiper-slide     { height: auto !important; }
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<div class="con_img_wrap">
+	<img src="https://image.wconcept.co.kr/images/img/event/2024/0325_spring1000/pc/pc_top.gif">
+</div>
+
+
+
+
+
+
+
+
+<div class="con_img_wrap"  align="center" style="margin:0 auto;">
+    <div class="slidearea">
+        <div class="swipeslide__slide swiper-container swipecarou">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide ca-slide-width">
+                    <img src="https://image.wconcept.co.kr/images/img/event/2024/0325_spring1000/pc/pc_02-1.jpg"><!-- 흘라가는 이미지 삽입 -->
+                </div>
+                <div class="swiper-slide ca-slide-width">
+                    <img src="https://image.wconcept.co.kr/images/img/event/2024/0325_spring1000/pc/pc_02-2.jpg"><!-- 흘라가는 이미지 삽입 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.swiper.js"></script>
+<script>
+//swiper slider
+var carou_slide = new Swiper('.swiper-container.swipecarou', {
+ 
+    slidesPerView: 1,//한 화면에 보여지는 갯수, 기본 한 화면당 한장
+    effect:'slide',
+    centeredSlides: true,
+    speed:10000,//흘러가는 속도, 현재 한 슬라이드가 완전히 흘러가기까지 10000ms(10초) 소요
+     
+    observer: true,
+ 
+    //루프 기능 활성화 하려면 아래 주석을 해제하세요
+    loop: true,
+ 
+    //자동으로 슬라이드 되게 하시려면 아래 주석을 해제하세요(3500ms, 3.5초)
+    autoplay: {
+        delay: 0
+    },
+});
+ 
+</script>
+
+
+
+
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.swiper.js"></script>
+
+<script>
+//swiper slider
+var default_slide6 = new Swiper('.swiper-container.swipefade', {
+
+	slidesPerView: 1,
+	effect: 'fade',
+
+      navigation: {
+        nextEl: '.sw6_next',
+        prevEl: '.sw6_prev',
+      },
+
+	loop: true,
+	speed: 1000, //다음이미지로 변경되는 속도 . 1000 = 1초
+
+	autoplay: {
+		delay: 1500 //다음이미지로 넘어가기 전 대기시간. 1000 = 1초
+	},
+});
+</script>
+
+
+<script src="https://image.wconcept.co.kr/images/img/publish/js/jquery.rwdImageMaps.js"></script>
+<script type="text/javascript">
+/* 도큐멘트 시작 시 */
+ $(document).ready(function(e) {  
+  /* 반응형 이미지맵 */
+  $('img[usemap]').rwdImageMaps();
+ });
+</script>
